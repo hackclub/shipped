@@ -91,11 +91,23 @@
   padding: $spacing-unit 0;
 }
 
+.project-card {
+  background: #fff;
+  border-radius: 0.15em;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 0px rgba(0, 0, 0, 0.04);
+  padding: 10px 15px 0 15px;
+  margin: 10px 10px 10px 10px;
+  overflow: hidden;
+  width: 250px;
+}
+
 .project-list {
   margin-left: 0;
   list-style: none;
+  display: inline-block;
 
   > li {
+    float: left;
     margin-bottom: $spacing-unit;
   }
 }
@@ -103,51 +115,4 @@
 .project-link {
   display: block;
   font-size: 24px;
-}
-
-
-
-/**
- * Posts
- */
-.project-header {
-  margin-bottom: $spacing-unit;
-}
-
-.project-title {
-  font-size: 42px;
-  letter-spacing: -1px;
-  line-height: 1;
-
-  @include media-query($on-laptop) {
-    font-size: 36px;
-  }
-}
-
-.project-content {
-  margin-bottom: $spacing-unit;
-
-  h2 {
-    font-size: 32px;
-
-    @include media-query($on-laptop) {
-      font-size: 28px;
-    }
-  }
-
-  h3 {
-    font-size: 26px;
-
-    @include media-query($on-laptop) {
-      font-size: 22px;
-    }
-  }
-
-  h4 {
-    font-size: 20px;
-
-    @include media-query($on-laptop) {
-      font-size: 18px;
-    }
-  }
 }

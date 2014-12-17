@@ -16,7 +16,7 @@ layout: default
         {% for projects in project_file %}
           {% for project in projects %}
             {% if project.name != null %}
-            <li class="project">
+            <li class="project-card">
               <h2>
                 <a class="project-link" href="{{ project.url }}">{{ project.name }}</a>
               </h2>
