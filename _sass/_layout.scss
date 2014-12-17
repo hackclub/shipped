@@ -2,7 +2,7 @@
  * Site header
  */
 .site-header {
-  border-top: 5px solid $grey-color-dark;
+  background-color: $hackedu-red;
   border-bottom: 1px solid $grey-color-light;
   min-height: 56px;
 
@@ -11,15 +11,20 @@
 }
 
 .site-title {
+  color: #fff;
   font-size: 26px;
+  font-weight: bold;
   line-height: 56px;
   letter-spacing: -1px;
   margin-bottom: 0;
   float: left;
 
-  &,
   &:visited {
-    color: $grey-color-dark;
+    color: #fff;
+  }
+
+  &:hover {
+    text-decoration: none;
   }
 }
 
