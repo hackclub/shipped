@@ -11,6 +11,7 @@ layout: default
     each directory and file as an array. Hopefully there's a better way to do
     this.
     {% endcomment %}
+
     {% for club in site.data.projects %}
       {% for project_file in club %}
         {% for projects in project_file %}
@@ -20,7 +21,17 @@ layout: default
               <h2>
                 <a class="project-link" href="{{ project.url }}">{{ project.name }}</a>
               </h2>
-              <p>{{ project.description }}</p>
+              <p class="description">{{ project.description }}</p>
+              <p class="authors">Made by {{ project.authors | join: ', ' }}</p>
+              <div>
+                <a href="{{ project.github_url }}">
+                  <span class="icon octicon octicon-mark-github"></span>
+                </a>
+                <a href="{{ project.url }}">
+                  <span class="icon octicon octicon-globe"></span>
+                </a>
+                </span>
+              </div>
             </li>
             {% endif %}
           {% endfor %}

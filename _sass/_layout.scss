@@ -95,7 +95,7 @@
   background: #fff;
   border-radius: 0.15em;
   box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 0px rgba(0, 0, 0, 0.04);
-  padding: 10px 15px 0 15px;
+  padding: 15px 20px 12.5px 20px;
   margin: 10px 10px 10px 10px;
   overflow: hidden;
   width: 250px;
@@ -115,4 +115,9 @@
 .project-link {
   display: block;
   font-size: 24px;
+}
+
+.authors {
+  color: $grey-color;
+  font-size: 14px;
 }

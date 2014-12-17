@@ -1,0 +1,8 @@
+name: Yelp for Yelp Reviews
+description: It's like Yelp, but for Yelp reviews.
+url: http://example.com/
+github_url: https://github.com/hackedu/shipped
+authors:
+  - Zaphod Beeblebrox
+  - Arthur Dent
+  - Trillian Astra
