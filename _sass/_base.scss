@@ -89,15 +89,15 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: $brand-color;
+  color: $lead-color;
   text-decoration: none;
 
   &:visited {
-    color: darken($brand-color, 15%);
+    color: $lead-color;
   }
 
   &:hover {
-    color: $text-color;
+    color: darken($lead-color, 20%);
     text-decoration: underline;
   }
 }
@@ -190,15 +190,6 @@ pre {
  * Icons
  */
 .icon {
-
-  > svg {
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    vertical-align: middle;
-
-    path {
-      fill: $grey-color;
-    }
-  }
+  margin: 0 2.5px 5px 2.5px;
+  color: $grey-color-dark;
 }
