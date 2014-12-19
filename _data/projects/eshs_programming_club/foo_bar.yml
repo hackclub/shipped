@@ -1,0 +1,8 @@
+name: Foo Bar
+description: Foo Bar
+url: https://github.com/krispo/awesome-haskell
+github_url: https://github.com/krispo/awesome-haskell
+authors:
+  - Zaphod Beeblebrox
+  - Arthur Dent
+  - Trillian Astra
