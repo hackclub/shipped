@@ -1,0 +1,6 @@
+name: Ship It
+description: Utility website for generating pull requests to submit projects to https://shipped.hackedu.us.
+url: https://shipit.hackedu.us
+github_url: https://github.com/hackedu/shipit
+authors:
+  - Zach Latta
