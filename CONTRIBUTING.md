@@ -15,8 +15,7 @@ now ready to share YFYR with the wider hackEDU community. Game on.
 You've trained for this moment for days, but when you go to the `shipped` repo,
 ready to share YFYR, you're faced with two options:
 
-* Have [hackEDU's premade utility](https://shipit.hackedu.us) (not ready yet)
-  submit a [pull
+* Have [hackEDU's premade utility](https://shipit.hackedu.us) submit a [pull
   request](https://www.atlassian.com/git/tutorials/making-a-pull-request/) for
   you
 * Submit the pull request manually
