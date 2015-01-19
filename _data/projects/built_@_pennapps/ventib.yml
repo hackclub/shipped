@@ -1,0 +1,8 @@
+name: Ventib
+description: Ventib records all your speech, transcribes it, and sends it to a server for processing. Ventib's server then analyzes the data to provide statistics. Ventib also has a search function, which allows users to search through their past speech and obtain timestamped logs with location data.
+url: http://github.com/cydrobolt/ventib
+github_url: http://github.com/cydrobolt/ventib
+authors:
+  - Chaoyi Zha
+  - Fox Wilson
+  - Samuel Damashek
