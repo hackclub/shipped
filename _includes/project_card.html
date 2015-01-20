@@ -4,7 +4,7 @@
       href="{{ include.project.url }}">{{ include.project.name }}</a>
   </h2>
   <p class="description">{{ include.project.description }}</p>
-  <p class="authors">Made by {{ include.project.authors | join: ', ' }}</p>
+  <p class="authors">Made by {{ include.project.authors | array_to_sentence_string }}</p>
   <div>
     <a href="{{ include.project.github_url }}">
       <span class="icon octicon octicon-mark-github"></span>
