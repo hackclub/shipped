@@ -14,21 +14,7 @@ layout: default
           {% for projects in project_file %}
               {% for project in projects %}
                 {% if project.name != null and project.is_event_details != true %}
-                <li class="project-card">
-                  <h2>
-                    <a class="project-link" href="{{ project.url }}">{{ project.name }}</a>
-                  </h2>
-                  <p class="description">{{ project.description }}</p>
-                  <p class="authors">Made by {{ project.authors | join: ', ' }}</p>
-                  <div>
-                    <a href="{{ project.github_url }}">
-                      <span class="icon octicon octicon-mark-github"></span>
-                    </a>
-                    <a href="{{ project.url }}">
-                      <span class="icon octicon octicon-globe"></span>
-                    </a>
-                  </div>
-                </li>
+                  {% include project_card.html project=project %}
                 {% endif %}
               {% endfor %}
           {% endfor %}
@@ -50,21 +36,7 @@ layout: default
         {% for projects in project_file %}
           {% for project in projects %}
             {% if project.name != null %}
-            <li class="project-card">
-              <h2>
-                <a class="project-link" href="{{ project.url }}">{{ project.name }}</a>
-              </h2>
-              <p class="description">{{ project.description }}</p>
-              <p class="authors">Made by {{ project.authors | join: ', ' }}</p>
-              <div>
-                <a href="{{ project.github_url }}">
-                  <span class="icon octicon octicon-mark-github"></span>
-                </a>
-                <a href="{{ project.url }}">
-                  <span class="icon octicon octicon-globe"></span>
-                </a>
-              </div>
-            </li>
+              {% include project_card.html project=project %}
             {% endif %}
           {% endfor %}
         {% endfor %}
