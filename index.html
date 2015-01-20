@@ -4,6 +4,40 @@ layout: default
 
 <div class="home">
 
+  <h1>Events</h1>
+
+  {% for event in site.data.events %}
+    <div class="event">
+      <h2>{{ event[1]._event.name }}</h2>
+      <ul class="project-list">
+        {% for project_file in event %}
+          {% for projects in project_file %}
+              {% for project in projects %}
+                {% if project.name != null and project.is_event_details != true %}
+                <li class="project-card">
+                  <h2>
+                    <a class="project-link" href="{{ project.url }}">{{ project.name }}</a>
+                  </h2>
+                  <p class="description">{{ project.description }}</p>
+                  <p class="authors">Made by {{ project.authors | join: ', ' }}</p>
+                  <div>
+                    <a href="{{ project.github_url }}">
+                      <span class="icon octicon octicon-mark-github"></span>
+                    </a>
+                    <a href="{{ project.url }}">
+                      <span class="icon octicon octicon-globe"></span>
+                    </a>
+                  </div>
+                </li>
+                {% endif %}
+              {% endfor %}
+          {% endfor %}
+        {% endfor %}
+      </ul>
+  {% endfor %}
+
+  <h1>All Projects</h1>
+
   <ul class="project-list">
     {% comment %}
     We have to do this mess of for loops and the if statement because our
@@ -11,7 +45,6 @@ layout: default
     each directory and file as an array. Hopefully there's a better way to do
     this.
     {% endcomment %}
-
     {% for club in site.data.projects %}
       {% for project_file in club %}
         {% for projects in project_file %}
