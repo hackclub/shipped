@@ -5,6 +5,16 @@ shipped a project, please submit a [pull
 request](https://help.github.com/articles/using-pull-requests/) using the below
 instructions. The website is regenerated every three hours.
 
+## Install and Run
+
+Shipped runs on [jekyll](http://jekyllrb.com/), so all you need to get up and running locally is  
+```bash
+# Install Jekyll
+$ gem install jekyll
+# Serve the site
+$ jekyll serve
+```
+
 ## License
 
 This repository is distributed under the MIT license found in the
