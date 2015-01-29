@@ -97,8 +97,6 @@
   }
 }
 
-
-
 /**
  * Page content
  */
@@ -112,19 +110,8 @@
   box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 0px rgba(0, 0, 0, 0.04);
   padding: 15px 20px 12.5px 20px;
   margin: 10px 10px 10px 10px;
-  overflow: hidden;
-  width: 250px;
-}
-
-.project-list {
-  margin-left: 0;
-  list-style: none;
   display: inline-block;
-
-  > li {
-    float: left;
-    margin-bottom: $spacing-unit;
-  }
+  margin: 0 0 1em;
 }
 
 .project-link {
@@ -135,4 +122,24 @@
 .authors {
   color: $grey-color;
   font-size: 14px;
+}
+
+/**
+ *Awesome guide to how this works: http://css-tricks.com/guide-responsive-friendly-css-columns/ 
+ */
+.project-list {
+  -moz-column-gap: $spacing-unit;
+  -webkit-column-gap: $spacing-unit;
+  column-gap: $spacing-unit;
+  -moz-column-count: 1;
+  -webkit-column-count: 1;
+  column-count: 1;
+}
+
+@media (min-height: 600px) {
+  .project-list {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+  }
 }
