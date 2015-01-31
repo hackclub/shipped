@@ -1,0 +1,7 @@
+name: Eden
+description: We built a platform that lets you to break free from Apple's walled garden. With Eden, you can deploy a personal OS X instance on Amazon EC2, Linode, or any other cloud provider in minutes, and use it to securely relay iMessage to any platform -- including Android, Windows Phone, and the web.
+url: http://challengepost.com/software/eden
+github_url: https://github.com/zachlatta/eden
+authors:
+  - Zach Latta
+  - Avi Romanoff
