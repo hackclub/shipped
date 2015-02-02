@@ -1,5 +1,6 @@
 name: DataWave
 description: Internet over FM radio waves. Plug the attachment into your android or computer audio jack and have an internet connection for miles
+url: http://challengepost.com/software/datawave
 github_url: https://github.com/datawaveteam
 authors:
   - Raphael Rouvinov
