@@ -9,7 +9,7 @@ instructions. The website is regenerated every three hours.
 ![](http://i.imgur.com/hv02NKH.gif)
 ## Install and Run
 
-Shipped runs on [jekyll](http://jekyllrb.com/), so all you need to get up and running locally is  
+Shipped runs on [Jekyll](http://jekyllrb.com/), so all you need to get up and running locally is  
 ```bash
 # Install Jekyll
 $ gem install jekyll
