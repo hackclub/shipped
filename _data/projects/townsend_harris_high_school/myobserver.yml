@@ -1,0 +1,6 @@
+name: MyObserver
+description: MyObserver is an iOS app that allows users to interact with Google Street View using Google Cardboard. The user can also zoom in and out using a Myo device.
+url: http://challengepost.com/software/myobserver
+github_url: https://github.com/jackcook/myobserver
+authors:
+  - Jack Cook, Tim Hung, Vicki Long, Ibnat Iqbal, Neil Chen
