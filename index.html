@@ -5,27 +5,6 @@ layout: default
 <div class="home">
 
   <p>This is a showcase of projects shipped by members of hackEDU clubs.</p>
-
-  <h1>Events</h1>
-
-  {% for event in site.data.events %}
-    <div class="event">
-      <h2>{{ event[1]._event.name }}</h2>
-      <ul class="project-list">
-        {% for project_file in event %}
-          {% for projects in project_file %}
-              {% for project in projects %}
-                {% if project.name != null and project.is_event_details != true %}
-                  {% include project_card.html project=project %}
-                {% endif %}
-              {% endfor %}
-          {% endfor %}
-        {% endfor %}
-      </ul>
-  {% endfor %}
-
-  <h1>All Projects</h1>
-
   <ul class="project-list">
     {% comment %}
     We have to do this mess of for loops and the if statement because our
