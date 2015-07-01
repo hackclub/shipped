@@ -1,0 +1,29 @@
+machine:
+  timezone: America/Los_Angeles
+  services:
+    - docker
+
+dependencies:
+  cache_directories:
+    - "~/docker"
+  pre:
+    - sudo service docker stop; sudo curl -L -o /usr/bin/docker 'http://s3-external-1.amazonaws.com/circle-downloads/docker-1.6.0-circleci'; sudo chmod 0755 /usr/bin/docker; sudo service docker start; true
+  override:
+    - docker info
+    - if [[ -e ~/docker/image.tar ]]; then docker load --input ~/docker/image.tar; fi
+    - docker build -t hackedu/shipped:$CIRCLE_SHA1 .
+    - mkdir -p ~/docker; docker save hackedu/shipped > ~/docker/image.tar
+
+test:
+  override:
+    - docker run -d -p 8080:8080 hackedu/shipped:$CIRCLE_SHA1; sleep 10
+    - curl --retry 10 --retry-delay 5 -v http://localhost:8080
+
+deployment:
+  hub:
+    branch: master
+    commands:
+      - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
+      - /usr/bin/expect -c "spawn /bin/bash; send \"emp login\r\"; expect email { send $EMP_USERNAME\r }; expect password { send $EMP_PASSWORD\r }; expect \"Logged in.\";"
+      - docker push hackedu/shipped:$CIRCLE_SHA1
+      - emp deploy hackedu/shipped:$CIRCLE_SHA1
