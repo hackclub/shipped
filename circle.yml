@@ -25,6 +25,6 @@ deployment:
     branch: master
     commands:
       - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
-      - /usr/bin/expect -c "spawn /bin/bash; send \"emp login\r\"; expect email { send $EMP_USERNAME\r }; expect password { send $EMP_PASSWORD\r }; expect \"Logged in.\";"
+      - /usr/bin/expect -c "spawn /bin/bash; send \"emp login\r\"; expect email { send $EMP_USERNAME\r }; expect password { send $EMP_PASSWORD\r }; expect \"Logged in.\";" > /dev/null
       - docker push hackedu/shipped:$CIRCLE_SHA1
       - emp deploy hackedu/shipped:$CIRCLE_SHA1
