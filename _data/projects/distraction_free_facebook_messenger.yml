@@ -2,5 +2,7 @@ name: Distraction Free Facebook Messenger
 description: Eliminates all the distractions of Facebook Messenger.
 url: https://chrome.google.com/webstore/detail/distraction-free-facebook/ipkbhlfkopeokhpbhgmlonagpppedfej
 github_url: https://github.com/jonleung/distraction-free-facebook-messenger
+clubs:
+  - hackEDU
 authors:
   - Jonathan Leung

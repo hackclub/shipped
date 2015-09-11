@@ -12,15 +12,11 @@ layout: default
     each directory and file as an array. Hopefully there's a better way to do
     this.
     {% endcomment %}
-    {% for club in site.data.projects %}
-      {% for project_file in club %}
-        {% for projects in project_file %}
-          {% for project in projects %}
-            {% if project.name != null %}
-              {% include project_card.html project=project %}
-            {% endif %}
-          {% endfor %}
-        {% endfor %}
+    {% for project_file in site.data.projects %}
+      {% for project in project_file %}
+        {% if project.name != null %}
+          {% include project_card.html project=project %}
+        {% endif %}
       {% endfor %}
     {% endfor %}
   </ul>

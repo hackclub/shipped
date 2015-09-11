@@ -2,6 +2,8 @@ name: caster.link
 description: Web-based live streaming for mobile devices. Compatible with Chrome and Firefox. Site/streaming may be down, we're trying to get our server fixed.
 url: http://caster.link
 github_url: https://github.com/jawerty/caster.link
+clubs:
+  - Cherry Hill High School East
 authors:
   - Bogdan Vitoc
   - Jared Wright

@@ -2,6 +2,8 @@ name: tweetVR
 description: tweetVR augments tweets onto Google Maps Streetview for your Twitter viewing pleasure. Our targeted users are those who know there are infinite ways to view data. Users can view tweets, in virtual reality, in a radius of their current location or see what people are tweeting in a totally different hemisphere. Now what can be a better and faster way to discover what's trending around your current physical surroundings? :)
 url: http://challengepost.com/software/tweetvr
 github_url: https://github.com/gauss1181/MHacksV
+clubs:
+  - International Academy East
 authors:
   - Shriyash Jalukar
   - Megan Chen
