@@ -3,7 +3,7 @@
 This is a showcase of projects shipped by members of hackEDU clubs. Once you've
 shipped a project, please submit a [pull
 request](https://help.github.com/articles/using-pull-requests/) using the below
-instructions. The website is regenerated every three hours.
+instructions.
 
 ![](http://i.imgur.com/hv02NKH.gif)
 
