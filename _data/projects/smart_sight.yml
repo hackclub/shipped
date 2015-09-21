@@ -1,6 +1,8 @@
 name: Smart Sight
 description: An augmented reality real-time app that can identify products and the companies that produce them. It then displays the stock price along with other financial data of the company right on the camera screen in addition to providing a way to order the product that you see.
 github_url: https://github.com/himat/SmartSight
+clubs:
+  - Middlesex County Academy
 authors:
   - Hima Tammineedi
   - Syed Raziq Mohideen

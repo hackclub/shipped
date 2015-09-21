@@ -2,5 +2,7 @@ name: Build Your Own Lisp - Gitbook
 description: A port to gitbook of the ebook Build Your Own Lisp by Daniel Holden.
 url: http://landersbenjamin.gitbooks.io/buildyourownlisp/
 github_url: https://github.com/TheThirdOne/BuildYourOwnLispGitbook
+clubs:
+  - El Segundo High School
 authors:
   - Benjamin Landers

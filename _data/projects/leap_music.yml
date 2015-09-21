@@ -1,6 +1,8 @@
 name: Leap Music
 description: A Chrome Extension that uses the leap motion to control pandora.
 github_url: https://github.com/austincarvey/LeapMusic
+clubs:
+  - HSMSE, Stuyvesant High School, Trinity Club
 authors:
   - Austin Carvey
   - Philip Steinman
