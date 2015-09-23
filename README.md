@@ -9,7 +9,8 @@ instructions.
 
 ## Install and Run
 
-Shipped runs on [Jekyll](http://jekyllrb.com/), so all you need to get up and running locally is
+Shipped runs on [Jekyll](http://jekyllrb.com/), so all you need to get up and
+running locally is
 
 ```bash
 # Install Jekyll
