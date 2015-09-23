@@ -2,6 +2,8 @@ name: Esoteric Adventures
 description: Esoteric adventures is a game where you battle against the corporations in order to save your forest and furthermore the world from being put under the power of the right wing. #LD48
 url: http://harrisonshoebridge.me/esoteric-adventures
 github_url: https://github.com/paked/esoteric-adventures
+clubs:
+  - Glenaeon Rudolf Steiner School
 authors:
   - Harrison Shoebridge
   - Rafe Skidmore
