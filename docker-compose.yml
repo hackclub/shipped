@@ -1,0 +1,9 @@
+web:
+  build: .
+  ports:
+    - 8080:8080
+    - 80:8080
+    - 443:8080
+  volumes:
+    - .:/srv/jekyll
+  command: jekyll serve -P 8080 -H 0.0.0.0
