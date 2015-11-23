@@ -8,19 +8,19 @@ gallery even more amazing :shipit:!
 You just published the first iteration of Yelp for Yelp Reviews (YFYR), the
 project you're working on, and shared it with your good friend and mortal
 enemy, Jane Janeington. After Jane confirmed the viability of the idea, you're
-now ready to share YFYR with the wider hackEDU community. Game on.
+now ready to share YFYR with the wider Hack Club community. Game on.
 
 ## The Fork
 
 You've trained for this moment for days, but when you go to the `shipped` repo,
 ready to share YFYR, you're faced with two options:
 
-* Have [hackEDU's premade utility](https://shipit.hackedu.us) submit a [pull
+* Have [Hack Club's premade utility](https://shipit.hackclub.io) submit a [pull
   request](https://www.atlassian.com/git/tutorials/making-a-pull-request/) for
   you
 * Submit the pull request manually
 
-If you chose the former, head over to https://shipit.hackedu.us and follow the
+If you chose the former, head over to https://shipit.hackclub.io and follow the
 instructions there. If you opted for the latter, keep following along.
 
 ## Phase 1 - TODO

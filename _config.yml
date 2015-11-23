@@ -1,6 +1,6 @@
-title: hackEDU Shipped Projects
+title: Hack Club Shipped Projects
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://shipped.hackedu.us" # the base hostname & protocol for your site
+url: "https://shipped.hackclub.io" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown

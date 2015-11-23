@@ -1,5 +1,5 @@
 FROM jekyll/jekyll:latest
-MAINTAINER Zach Latta <zach@hackedu.us>
+MAINTAINER Zach Latta <zach@hackclub.io>
 
 RUN rm -rf /srv/jekyll/
 COPY . /srv/jekyll/

@@ -3,13 +3,13 @@
 ---
 @charset "utf-8";
 
-// hackEDU colors
-$hackedu-red: #d3595d;
-$hackedu-blue: #5679ad;
-$hackedu-green: #12b566;
-$hackedu-black: #343434;
-$hackedu-purple: #754D97;
-$hackedu-orange: #e67e22;
+// Hack Club colors
+$hackclub-red: #d3595d;
+$hackclub-blue: #5679ad;
+$hackclub-green: #12b566;
+$hackclub-black: #343434;
+$hackclub-purple: #754D97;
+$hackclub-orange: #e67e22;
 
 // Our variables
 $base-font-family: 'Open Sans', Helvetica, Arial, sans-serif;
@@ -21,7 +21,7 @@ $spacing-unit:   30px;
 
 $text-color:     #111;
 $background-color: #fafafa;
-$lead-color: $hackedu-blue;
+$lead-color: $hackclub-blue;
 
 $grey-color:     #828282;
 $grey-color-light: lighten($grey-color, 40%);
