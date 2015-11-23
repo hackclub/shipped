@@ -1,9 +1,9 @@
 # Shipped :shipit:
 
-This is a showcase of projects shipped by members of hackEDU clubs. Once you've
-shipped a project, please submit a [pull
-request](https://help.github.com/articles/using-pull-requests/) using the below
-instructions.
+This is a showcase of projects shipped by members of Hack Club clubs. Once
+you've shipped a project, please submit a
+[pull request](https://help.github.com/articles/using-pull-requests/) using the
+below instructions.
 
 ![](http://i.imgur.com/hv02NKH.gif)
 
