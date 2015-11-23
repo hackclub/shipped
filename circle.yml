@@ -1,30 +1,21 @@
 machine:
-  timezone: America/Los_Angeles
   services:
     - docker
 
 dependencies:
-  cache_directories:
-    - "~/docker"
   pre:
-    - sudo service docker stop; sudo curl -L -o /usr/bin/docker 'http://s3-external-1.amazonaws.com/circle-downloads/docker-1.6.0-circleci'; sudo chmod 0755 /usr/bin/docker; sudo service docker start; true
-    - go get github.com/remind101/emp
-  override:
-    - docker info
-    - if [[ -e ~/docker/image.tar ]]; then docker load --input ~/docker/image.tar; fi
-    - docker build -t hackedu/shipped:$CIRCLE_SHA1 .
-    - mkdir -p ~/docker; docker save hackedu/shipped > ~/docker/image.tar
+    - curl -Ls https://install.convox.com/linux.zip > /tmp/convox.zip
+      && sudo unzip /tmp/convox.zip -d /usr/local/bin
 
 test:
   override:
-    - docker run -d -p 8080:8080 hackedu/shipped:$CIRCLE_SHA1; sleep 5
-    - curl --retry 10 --retry-delay 5 -v http://localhost:8080
+    - echo "No tests!"
 
 deployment:
   hub:
     branch: master
     commands:
-      - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
-      - /usr/bin/expect -c "spawn /bin/bash; send \"emp login\r\"; expect email { send $EMP_USERNAME\r }; expect password { send $EMP_PASSWORD\r }; expect \"Logged in.\";" > /dev/null
-      - docker push hackedu/shipped:$CIRCLE_SHA1
-      - emp deploy hackedu/shipped:$CIRCLE_SHA1
+      - convox login $CONVOX_HOST --password $CONVOX_PASSWORD
+      - git clone git://github.com/hackclub/shipped /tmp/shipped
+        && cd /tmp/shipped
+        && convox deploy | sed 's/docker .*/docker ********/'
