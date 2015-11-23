@@ -1,4 +1,4 @@
-# Shipped :shipit:
+# Shipped :shipit: [![Circle CI](https://circleci.com/gh/hackclub/shipped.svg?style=svg)](https://circleci.com/gh/hackclub/shipped)
 
 This is a showcase of projects shipped by members of Hack Club clubs. Once
 you've shipped a project, please submit a
