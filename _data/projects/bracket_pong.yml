@@ -1,0 +1,8 @@
+name: Bracket Pong
+description: A simple game made as part of a 5 day challenge. It is 2 player Pong Game.
+url: http://mahahahajan.github.io/BracketPong/
+github_url: https://github.com/mahahahajan/BracketPong
+clubs:
+  - Hack Camp
+authors:
+  - Pulkit Mahajan
